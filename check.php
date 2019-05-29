@@ -43,7 +43,14 @@
     <p><?php echo $nickname_result ?></p>
     <p><?php echo $email_result ?></p>
     <p><?php echo $contact_result ?></p>
-
-
+    <form method="POST" action="thanks.php">
+        <input type="hidden" name="nickname" value="<?php echo $nickname ?>">
+        <input type="hidden" name="email" value="<?php echo $email ?>">
+        <input type="hidden" name="contact" value="<?php echo $contact ?>">
+        <input type="button" value="戻る" onclick="history.back()">
+        <?php if ($email != '' && $nickname != '' && $contact != '' ): ?>
+        <input type="submit" value="OK">
+    <?php endif;?>
+    </form>
 </body>
 </html>
