@@ -1,7 +1,11 @@
 <?php
-    $nickname = $_POST['nickname'];
-    $email = $_POST['email'];
-    $contact = $_POST['contact'];
+ if ($_SERVER['REQUEST_METHOD'] ==='GET') {
+        header('Location: index.html');
+}
+    require_once('function.php');
+    $nickname = h($_POST['nickname']);
+    $email = h($_POST['email']);
+    $contact = h($_POST['contact']);
  ?>
  <!DOCTYPE html>
  <html lang="ja">

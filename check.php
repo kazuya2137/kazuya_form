@@ -1,7 +1,13 @@
 <?php
-    $nickname = $_POST['nickname'];
-    $email = $_POST['email'];
-    $contact = $_POST['contact'];
+    // メソッドがGETの時はページのトップにリダイレクト
+    if ($_SERVER['REQUEST_METHOD'] ==='GET') {
+        header('Location: index.html');
+        }
+        // 関数のよび出し
+        require_once('function.php');
+    $nickname = h($_POST['nickname']);
+    $email = h($_POST['email']);
+    $contact = h($_POST['contact']);
 // スーパーグローバル関数
 // echo $nickname;
     if ($nickname == '') {
