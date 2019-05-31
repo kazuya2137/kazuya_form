@@ -6,6 +6,13 @@
     $nickname = h($_POST['nickname']);
     $email = h($_POST['email']);
     $contact = h($_POST['contact']);
+    // DBとの接続
+    require_once('dbconnect.php');
+    // $stmt=$dbh->prepare('INSERT INTO surveys (nickname, email, content) VALUES (?, ?, ?)');
+    // $stmt->execute([$nickname, $email, $content]);
+    $stmt = $dbh->prepare('INSERT INTO surveys (nickname, email, content) VALUES (?, ?, ?)');
+  $stmt->execute([$nickname, $email, $contact]);//?を変数に置き換えてSQLを実行
+
  ?>
  <!DOCTYPE html>
  <html lang="ja">
