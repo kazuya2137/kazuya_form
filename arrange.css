@@ -1,0 +1,98 @@
+.box11{
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+.box11 p  {
+    margin: 0; 
+    padding: 0;
+}
+.box6 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: #f0f7ff;
+    border: dashed 2px #5b8bd0;/*点線*/
+}
+.box6 p {
+    margin: 0; 
+    padding: 0;
+}
+.box7{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #474747;
+    background: whitesmoke;/*背景色*/
+    border-left: double 7px #4ec4d3;/*左線*/
+    border-right: double 7px #4ec4d3;/*右線*/
+}
+.box7 h1 {
+    margin: 0; 
+    padding: 0;
+}
+.oshare{
+  font-family: 'Amatic SC', cursive;
+}
+.kawaii {
+  font-family:  'Amatic SC', cursive;
+
+}
+.kakkoii{
+  font-family: 'Londrina Shadow', cursive;
+}
+.box12{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5989cf;
+    background: #c6e4ff;
+    border-bottom: solid 6px #aac5de;
+    border-radius: 9px;
+}
+.box12 p {
+    margin: 0; 
+    padding: 0;
+}
+.ikemen{
+  font-family:'Creepster', cursive;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table tr{
+  border-bottom: solid 1px #eee;
+  cursor: pointer;
+}
+
+table tr:hover{
+  background-color: #d4f0fd;
+}
+
+table th,table td{
+  text-align: center;
+  width: 25%;
+  padding: 15px 0;
+}
+
+table td.icon{
+  background-size: 35px;
+  background-position: left 5px center;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+table td.icon.bird{
+  background-image: url(icon-bird.png)
+}
+
+table td.icon.whale{
+  background-image: url(icon-whale.png)
+}
+
+table td.icon.crab{
+  background-image: url(icon-crab.png)
+}

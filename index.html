@@ -4,25 +4,28 @@
   <meta charset="utf-8">
   <title>お問い合わせ</title>
   <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="arrange.css">
 </head>
 <body>
-  <h1>お問い合わせ情報入力</h1>
+  <div  class="bg " style="text-align: center;">
+  <h1 class="mt-5 oshare">CONTACT FORM</h1>
   <form method="POST" action="check.php">
-    <div>
-      ニックネーム<br>
-      <input type="text" name="nickname">
+    <div class="mt-5">
+      <p class="bg oshare">NAME</p>
+      <input type="text" class="box11" name="nickname" placeholder="name">
     </div>
-    <div>
-      メールアドレス<br>
-      <input type="text" name="email">
+    <div class="mt-1">
+      <p class="bg oshare">MAIL ADRESS</p>
+      <input type="email" class="box11" name="email"placeholder="xxx@aaaa.com">
     </div>
-    <div>
-      
-      お問い合わせ<br>
-      <textarea name="contact"></textarea>
+    <div class="mt-1">
+
+      <p class=" oshare">INFORMATION</p>
+      <textarea name="contact" class="box11" placeholder="inforemation"></textarea>
     </div>
-    <input type="submit" name="送信">
+    <input type="submit" class="oshare" name="submit" value="submit" >
   </form>
+</div>
     <script src="bootstrap.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
